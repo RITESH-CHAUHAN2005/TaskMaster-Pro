@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+# TaskMaster Pro 🧩  
+**A Professional Multi-Tenant Task Management Platform (MERN Stack)**
 
-## Project info
+TaskMaster Pro is a fully-featured task management platform built using the MERN stack. It supports multi-tenancy, role-based access control, task assignment with expiry, and real-time notifications.
 
-**URL**: https://lovable.dev/projects/f1b9da61-41ae-4f41-88ae-0535581ed3a1
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### ✅ Core (Mandatory)
+- **Multi-Tenant Architecture**
+  - Organization-based data isolation
+  - Role-based access: `Admin`, `Manager`, `Member`
+  - Invite system via email or link
 
-**Use Lovable**
+- **Authentication & Authorization**
+  - Secure login/registration using JWT
+  - Role-based API protection
+  - Onboarding for new or existing organizations
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f1b9da61-41ae-4f41-88ae-0535581ed3a1) and start prompting.
+### 📝 Task Management
+- CRUD operations for tasks
+- Assign tasks to members
+- Task categories: `Bug`, `Feature`, `Improvement`
+- Task priorities: `Low`, `Medium`, `High`
+- Due date with auto-expiry status update
+- In-app notifications for overdue tasks
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🛠️ DevOps & Deployment
+- Fully containerized with **Docker**
+- Production-ready **Docker Compose** setup
+- Environment variable configuration
+- CI/CD pipeline support (GitHub Actions / Any CI)
+- MongoDB support with migration scripts
 
-**Use your preferred IDE**
+### 🔬 Testing
+- Unit tests for core logic
+- API integration tests
+- Docker health checks for all containers
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧑‍💻 Tech Stack
 
-Follow these steps:
+- **Frontend**: React, Tailwind CSS / Material UI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Auth**: JWT, bcrypt, Role-Based Access Control (RBAC)
+- **Task Expiry**: `node-cron` (background job scheduler)
+- **Notifications**: In-app toasts or alert system
+- **Containerization**: Docker, Docker Compose
+- **Deployment**: Ready for platforms like Render, DigitalOcean, or EC2
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f1b9da61-41ae-4f41-88ae-0535581ed3a1) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
